@@ -8,6 +8,7 @@ let propp0 = document.getElementById("propp0")
 let propp1 = document.getElementById("propp1")
 let passr = document.getElementById("passr")
 let passi = document.getElementById("passi")
+let passa = document.getElementById("passa")
 
 prop0.onclick = function () {
     ws.send("0")
@@ -23,6 +24,10 @@ passr.onclick = function () {
 
 passi.onclick = function () {
     ws.send("passi")
+}
+
+passa.onclick = function () {
+    ws.send("passa")
 }
 
 ws.onmessage = function (event) {
